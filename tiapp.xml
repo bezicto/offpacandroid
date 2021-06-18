@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>com.kasyrani.offpac</id>
+    <name>OffPAC</name>
+    <version>2.8.0.20200106</version>
+    <publisher>Tuanku Bainun Library</publisher>
+    <url>https://pustaka2.upsi.edu.my</url>
+    <description>Tuanku Bainun Library OffPAC Android Version</description>
+    <copyright>Perpustakaan Tuanku Bainun 2020</copyright>
+    <icon>default_icon.png</icon>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
+    <guid>162148c7-e83c-4e8f-9777-290610e4be0d</guid>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <ios>
+        <plist>
+            <dict>
+                <key>UISupportedInterfaceOrientations~iphone</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                </array>
+                <key>UISupportedInterfaceOrientations~ipad</key>
+                <array>
+                    <string>UIInterfaceOrientationPortrait</string>
+                    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+                    <string>UIInterfaceOrientationLandscapeLeft</string>
+                    <string>UIInterfaceOrientationLandscapeRight</string>
+                </array>
+                <key>UIRequiresPersistentWiFi</key>
+                <false/>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+                <key>UIStatusBarHidden</key>
+                <false/>
+                <key>UIStatusBarStyle</key>
+                <string>UIStatusBarStyleDefault</string>
+            </dict>
+        </plist>
+    </ios>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:versionCode="2020010628" android:versionName="2.8.0.20200106">
+            <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28"/>
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        </manifest>
+    </android>
+    <modules>
+        <module platform="android" version="5.10.1">com.mirasense.scanditsdk</module>
+        <module platform="android" version="2.0.3">dk.napp.drawer</module>
+    </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="ipad">false</target>
+        <target device="iphone">false</target>
+    </deployment-targets>
+    <sdk-version>7.5.1.GA</sdk-version>
+    <!--
+    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property><property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property><property name="acs-oauth-secret-development" type="string">uBGf9rvoT9TSWGcn2HvylXwG53ri9Z65</property><property name="acs-oauth-key-development" type="string">3Q6SpyaliORhPtWVSOLxLZvQOeTgdIRq</property><property name="acs-api-key-development" type="string">oYhow7LQwFxuhCpeD3NB7FPQes7G4rl0</property><property name="acs-username-development" type="string">appc_app_user_dev</property><property name="acs-password-development" type="string">pySqxrByODKUMcWyWY</property><property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property><property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property><property name="acs-oauth-secret-production" type="string">FHG3bBtnIBhquSQBLzlLQtSNH8IjXcQ2</property><property name="acs-oauth-key-production" type="string">lRdvkPQPJL5PixAZmt2aty7ANadFKcCg</property><property name="acs-api-key-production" type="string">DJ7QNZpH0F18GsO6LMzBs336nJjOIcKu</property><property name="acs-username-production" type="string">appc_app_user</property><property name="acs-password-production" type="string">xbE2jQyjw11PZ0Bt4D</property>
+    -->
+    <property name="appc-org-id" type="string">100001582</property>
+    <property name="appc-creator-user-id" type="string">19facda4-5d02-405c-a92a-d3cf4f2a9c7d</property>
+    <property name="appc-app-id" type="string">5dae7463c1059411bdce0040</property>
+    <plugins/>
+</ti:app>
